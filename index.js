@@ -1,10 +1,24 @@
-/*para cargar el modulo nativo dentro de nuestro archivo js podemos 
- usar el pauqte bindings que instalamos al principio
-o especificar la ruta completa de donde esta el archivo .node generado*/
-//froma 1
-const mymodule = require("bindings")("mymodule");//el .node no es necesario
-//forma 2
-//const mymodule = require("./build/Release/mymodule");//el .node no es necesario
-const sum = mymodule.suma(2,2);
-
-console.log("El resultado de la suma es :", sum);//mostramos el resultado 
+const contoh = function(string) {
+  let newString = '';
+  for (var i = 0, len = string.length; i < len; i++) {
+    if (string[i] == 'a') {
+      newString += '4';
+    } else if (string[i] == 's') {
+      newString += '5';
+    } else if (string[i] == 'e') {
+      newString += '3';
+    } else if (string[i] == 'o') {
+      newString += '0';
+    } else if (string[i] == 'b') {
+      newString += '8';
+    } else if (string[i] == 'g') {
+      newString += '9';
+    } else if (string[i] == 'i') {
+      newString += '1';
+    }  else {
+      newString += string[i];
+    }
+  }
+  return newString;
+}
+module.exports =  contoh;
