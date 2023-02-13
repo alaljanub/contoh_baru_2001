@@ -1,11 +1,20 @@
 {
   "name": "contoh_baru_2001",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "contoh baru 2001",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "colok",
-  "license": "ISC"
+  "keywords": [
+    "npm",
+    "library"
+  ],
+  "type": "module",
+  "author": "alwyn",
+  "license": "ISC",
+  "exports": {
+    ".": "./index.js",
+    "./number": "./number.js"
+  }
 }
